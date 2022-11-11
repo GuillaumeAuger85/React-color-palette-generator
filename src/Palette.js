@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import ColorBox from './ColorBox';
+import "flag-icons/css/flag-icons.css";
 import './Palette.css'
 
 class Palette extends Component {
@@ -11,28 +12,30 @@ class Palette extends Component {
             format: 'hex'
         }
         this.changeLevel = this.changeLevel.bind(this)
-        this.changeFormat=this.changeFormat.bind(this)
+        this.changeFormat = this.changeFormat.bind(this)
     }
-    changeFormat(evt){
-         this.setState({format :evt.target.value})
+    changeFormat(evt) {
+        this.setState({ format: evt.target.value })
     }
     changeLevel(level) {
         this.setState({ level })
     }
     render() {
-        const { colors } = this.props.palette;
+        const { colors, paletteName, emoji } = this.props.palette;
         const { level, format } = this.state;
         const colorBoxes = colors[level].map(color => (
-            <ColorBox background={color[format]} name={color.name} />
+            <ColorBox background={color[format]} name={color.name}  key={color.id} />
         ))
         return (
             <div className='Palette'>
-                <Navbar level={level} changeLevel={this.changeLevel} handleChange={this.changeFormat} format={this.state.format}/>
-                {/* navbar goes here */}
+                <Navbar level={level} changeLevel={this.changeLevel} handleChange={this.changeFormat} format={this.state.format} />
                 <div className='Palette-colors'>
                     {colorBoxes}
                 </div>
-                {/* footer */}
+                <footer className='palette-footer'>
+                    {paletteName}
+                    <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span>
+                </footer>
             </div>
         )
     }
