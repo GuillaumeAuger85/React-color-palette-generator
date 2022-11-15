@@ -21,14 +21,14 @@ class Palette extends Component {
         this.setState({ level })
     }
     render() {
-        const { colors, paletteName, emoji } = this.props.palette;
+        const { colors, paletteName, emoji,id } = this.props.palette;
         const { level, format } = this.state;
         function containsAnyLetters(str) {
             return /[a-zA-Z]/.test(str);
           }
         const span = containsAnyLetters(emoji) ? <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span> :<span className='emoji'>{emoji}</span>;
         const colorBoxes = colors[level].map(color => (
-            <ColorBox background={color[format]} name={color.name}  key={color.id} />
+            <ColorBox background={color[format]} name={color.name}  key={color.id} colorId={color.id} paletteId={id} showLink={true}/>
         ))
         return (
             <div className='Palette'>
