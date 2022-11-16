@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'rc-slider';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'rc-slider/assets/index.css';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
@@ -27,13 +27,13 @@ class Navbar extends Component {
         this.setState({ open: false })
     }
     render() {
-        const { level, changeLevel, format } = this.props
+        const { level, changeLevel, format, showingAllColors } = this.props
         return (
             <header className='Navbar' >
                 <div className='logo'>
                     <Link to='/'>reactColorPicker</Link>
                 </div>
-                <div className='slider-container'>
+                {showingAllColors && <div className='slider-container'>
                     <span>Level: {level}</span>
                     <div className='slider'>
                         <Slider
@@ -44,6 +44,7 @@ class Navbar extends Component {
                             onAfterChange={changeLevel} />
                     </div>
                 </div>
+                }
                 <div className='select-container'>
                     <Select defaultValue='hex' onChange={this.handleFormatChange}>
                         <MenuItem value='hex'>HEX- #fffffff</MenuItem>
