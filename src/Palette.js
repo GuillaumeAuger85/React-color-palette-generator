@@ -3,7 +3,19 @@ import Navbar from './Navbar';
 import ColorBox from './ColorBox';
 import PaletteFooter from './PaletteFooter';
 import "flag-icons/css/flag-icons.css";
-import './Palette.css'
+import './Palette.css';
+import { withStyles } from '@material-ui/styles';
+
+
+const styles = {
+    Palette: {
+        height: "100vh",
+        overflow: "hidden",
+    },
+    PaletteColors:{
+        height: "90%"
+    }
+}
 
 class Palette extends Component {
     constructor(props) {
@@ -22,25 +34,26 @@ class Palette extends Component {
         this.setState({ level })
     }
     render() {
-        const { colors, paletteName, emoji,id } = this.props.palette;
+        const { colors, paletteName, emoji, id } = this.props.palette;
+        const {classes} =this.props;
         const { level, format } = this.state;
         function containsAnyLetters(str) {
             return /[a-zA-Z]/.test(str);
-          }
-        const span = containsAnyLetters(emoji) ? <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span> :<span className='emoji'>{emoji}</span>;
+        }
+        const span = containsAnyLetters(emoji) ? <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span> : <span className='emoji'>{emoji}</span>;
         const colorBoxes = colors[level].map(color => (
-            <ColorBox background={color[format]} name={color.name}  key={color.id} colorId={color.id} paletteId={id} showingFullPalette={true}/>
+            <ColorBox background={color[format]} name={color.name} key={color.id} colorId={color.id} paletteId={id} showingFullPalette={true} />
         ))
         return (
-            <div className='Palette'>
-                <Navbar level={level} changeLevel={this.changeLevel} handleChange={this.changeFormat} format={this.state.format} showingAllColors/>
-                <div className='Palette-colors'>
+            <div className={classes.Palette}>
+                <Navbar level={level} changeLevel={this.changeLevel} handleChange={this.changeFormat} format={this.state.format} showingAllColors />
+                <div className={classes.PaletteColors}>
                     {colorBoxes}
                 </div>
-                <PaletteFooter paletteName={paletteName} emoji={emoji}/>
+                <PaletteFooter paletteName={paletteName} emoji={emoji} />
             </div>
         )
     }
 }
 
-export default Palette
+export default withStyles(styles)(Palette)
