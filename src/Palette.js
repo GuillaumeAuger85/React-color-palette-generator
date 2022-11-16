@@ -3,19 +3,8 @@ import Navbar from './Navbar';
 import ColorBox from './ColorBox';
 import PaletteFooter from './PaletteFooter';
 import "flag-icons/css/flag-icons.css";
-import './Palette.css';
 import { withStyles } from '@material-ui/styles';
-
-
-const styles = {
-    Palette: {
-        height: "100vh",
-        overflow: "hidden",
-    },
-    PaletteColors:{
-        height: "90%"
-    }
-}
+import styles from './styles/PaletteStyles';
 
 class Palette extends Component {
     constructor(props) {

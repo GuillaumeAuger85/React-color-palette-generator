@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-
+import { withStyles } from '@material-ui/styles';
+import styles from './styles/PaletteFooterStyles';
 
 function PaletteFooter(props) {
     function containsAnyLetters(str) {
         return /[a-zA-Z]/.test(str);
-      }
-    const { paletteName, emoji } = props;
-    const span = containsAnyLetters(emoji) ? <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span> : <span className='emoji'>{emoji}</span>;
+    }
+    const { paletteName, emoji, classes } = props;
+    const span = containsAnyLetters(emoji) ? <span className={`${classes.emoji} fi fi-${emoji.toLowerCase()}`}></span> : <span className={classes.emoji}>{emoji}</span>;
     return (
-        <footer className='palette-footer'>
+        <footer className={classes.PaletteFooter}>
             {paletteName}
             {span}
         </footer>
     )
 }
 
-export default PaletteFooter
+export default withStyles(styles)(PaletteFooter)
