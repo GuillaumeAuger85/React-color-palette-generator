@@ -29,7 +29,7 @@ class Palette extends Component {
           }
         const span = containsAnyLetters(emoji) ? <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span> :<span className='emoji'>{emoji}</span>;
         const colorBoxes = colors[level].map(color => (
-            <ColorBox background={color[format]} name={color.name}  key={color.id} colorId={color.id} paletteId={id} showLink={true}/>
+            <ColorBox background={color[format]} name={color.name}  key={color.id} colorId={color.id} paletteId={id} showingFullPalette={true}/>
         ))
         return (
             <div className='Palette'>

@@ -6,6 +6,7 @@ import PaletteFooter from './PaletteFooter';
 
 
 
+
 class SingleColorPalette extends Component {
     constructor(props) {
         super(props)
@@ -15,6 +16,7 @@ class SingleColorPalette extends Component {
         this._shades = this.gatherShades(this.props.palette, this.props.colorId);
         this.changeFormat = this.changeFormat.bind(this);
     }
+   
     changeFormat(evt) {
         this.setState({ format: evt.target.value })
     }
@@ -30,7 +32,7 @@ class SingleColorPalette extends Component {
         const { format } = this.state;
         const { paletteName, emoji, id } = this.props.palette;
         const colorBoxes = this._shades.map(color => (
-            <ColorBox key={color.name} name={color.name} background={color[format]} showLink={false} />
+            <ColorBox key={color.name} name={color.name} background={color[format]} showingFullPalette={false} />
         ))
         return (
             <div className='SingleColorPalette Palette'>
