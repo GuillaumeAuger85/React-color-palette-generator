@@ -4,7 +4,7 @@ import Palette from './Palette';
 import seedColors from './seedColors';
 import PaletteList from './PaletteList';
 import SingleColorPalette from './SingleColorPalette';
-import NewPaletteForm from './NewPaletteform';
+import NewPaletteForm from './NewPaletteForm';
 import { generatePalette } from './colorHelpers';
 import { Route, Switch } from 'react-router-dom';
 import { palette } from '@mui/system';
