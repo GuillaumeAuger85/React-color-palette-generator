@@ -13,6 +13,7 @@ import { withStyles } from '@material-ui/core/styles';
 import PaletteMetaForm from './PaletteMetaForm';
 
 
+
 const drawerWidth = 400;
 
 const styles = theme => ({
@@ -26,6 +27,7 @@ const styles = theme => ({
         }),
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center',
         height: '64px'
     },
     appBarShift: {
@@ -41,7 +43,16 @@ const styles = theme => ({
         marginRight: 20,
     },
     navBtns: {
-
+        marginRight: '1rem',
+        '& a': {
+            textDecoration: 'none'
+        }
+    },
+    button: {
+        margin: '0 0.5rem',
+        '& a': {
+            textDecoration: 'none'
+        }
     }
 })
 
@@ -49,14 +60,23 @@ class PaletteFormNav extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            newPaletteName: ''
+            newPaletteName: '',
+            formShowing: false
         }
-        this.handleChange = this.handleChange.bind(this)
+        this.handleChange = this.handleChange.bind(this);
+        this.showForm = this.showForm.bind(this);
+        this.hideForm = this.hideForm.bind(this)
     }
-    
+
     handleChange(evt) {
         this.setState({ [evt.target.name]: evt.target.value });
     };
+    showForm() {
+        this.setState({ formShowing: true })
+    }
+    hideForm(){
+        this.setState({formShowing: false})
+    }
     render() {
         const { classes, open, palettes, handleSubmit } = this.props;
         const { newPaletteName } = this.state;
@@ -87,13 +107,28 @@ class PaletteFormNav extends Component {
                         </Typography>
                     </Toolbar>
                     <div className={classes.navBtns}>
-                 
-                        <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit}/>
                         <Link to='/'>
-                            <Button variant='contained' color='secondary'>Go Back</Button>
+                            <Button
+                                className={classes.button}
+                                variant='contained'
+                                color='secondary'
+                            >
+                                Go Back
+                            </Button>
                         </Link>
+                        <Button
+                            className={classes.button}
+                            variant="contained"
+                            color="primary"
+                            onClick={this.showForm}
+                        >
+                            Save
+                        </Button>
                     </div>
                 </AppBar>
+                {this.state.formShowing &&
+                    <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm}/>
+                }
             </div>
         )
 
