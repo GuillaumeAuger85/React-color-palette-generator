@@ -23,7 +23,6 @@ class App extends Component {
   findPalette = (id) => this.state.palettes.find(palette => palette.id === id);
   savePalette(newPalette) {
     this.setState({ palettes: [...this.state.palettes, newPalette] })
-    console.log(this.state.palettes)
   }
   render() {
 

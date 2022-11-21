@@ -38,6 +38,6 @@ export default {
         display: 'inline-block',
         margin: '0 auto',
         postion: 'relative',
-        marginBottom: '-4px'
+        marginBottom: '-6px'
     }
 }
