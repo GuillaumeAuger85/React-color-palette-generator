@@ -90,7 +90,7 @@ class PaletteFormNav extends Component {
                             Create A Palette
                         </Typography>
                     </Toolbar>
-                    <div className='classes.navBtns'>
+                    <div className={classes.navBtns}>
                         <ValidatorForm onSubmit={() => this.props.handleSubmit(newPaletteName)}>
                             <TextValidator
                                 value={this.state.newPaletteName}
