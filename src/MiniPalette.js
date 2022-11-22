@@ -13,8 +13,8 @@ function MiniPalette(props) {
     function containsAnyLetters(str) {
         return /[a-zA-Z]/.test(str);
     }
-    // const span = containsAnyLetters(emoji) ? <span className={`fi fi-${emoji.toLowerCase()} ${classes.emoji}`}></span> : <span className={classes.emoji}>{emoji}</span>;
-    const span = <span className={classes.emoji}>{emoji}</span>;
+    const span = containsAnyLetters(emoji.toUpperCase().toLowerCase()) ? <span className={`fi fi-${emoji.toLowerCase()} ${classes.emoji}`}></span> : <span className={classes.emoji}>{emoji}</span>;
+    // const span = <span className={classes.emoji}>{emoji}</span>;
     return (
         <div className={classes.root} onClick={props.handleClick}>
             <div className={classes.colors}>
