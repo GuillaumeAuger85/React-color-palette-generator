@@ -1,7 +1,7 @@
 export default {
     Palette: {
         height: "100vh",
-        overflow: "hidden",
+        overflowX: 'hidden'
     },
     PaletteColors: {
         height: "90%"
@@ -14,9 +14,9 @@ export default {
         position: "relative",
         cursor: "pointer",
         marginBottom: "-4px",
-        opacity:'1',
+        opacity: '1',
         backgroundColor: "black",
-        '& a':{
+        '& a': {
             width: "100px",
             height: "30px",
             position: "absolute",
