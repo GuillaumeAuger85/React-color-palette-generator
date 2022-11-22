@@ -41,7 +41,7 @@ export default {
         display: 'inline-block',
         margin: '0 auto',
         postion: 'relative',
-        marginBottom: '-6px'
+        marginBottom: '-4px'
     },
     delete: {},
     deleteIcon: {

@@ -20,12 +20,19 @@ class App extends Component {
     };
     this.savePalette = this.savePalette.bind(this);
     this.findPalette = this.findPalette.bind(this);
+    this.deletePalette = this.deletePalette.bind(this);
   }
   findPalette = (id) => this.state.palettes.find(palette => palette.id === id);
+  deletePalette(id) {
+    this.setState(st =>
+      ({ palettes: st.palettes.filter(palette => palette.id !== id) }),
+      this.syncLocalStorage
+    )
+  }
   savePalette(newPalette) {
     this.setState({ palettes: [...this.state.palettes, newPalette] }, this.syncLocalStorage)
   }
-  syncLocalStorage(){
+  syncLocalStorage() {
     const palettes = JSON.stringify(this.state.palettes)
     window.localStorage.setItem('palettes', palettes)
   }
@@ -36,7 +43,7 @@ class App extends Component {
         <Route
           exact
           path='/palette/new'
-          render={(routeProps) => <NewPaletteForm savePalette={this.savePalette} {...routeProps} palettes={this.state.palettes}/>} />
+          render={(routeProps) => <NewPaletteForm savePalette={this.savePalette} {...routeProps} palettes={this.state.palettes} />} />
         <Route
           exact
           path='/palette/:paletteId/:colorId'
@@ -49,7 +56,7 @@ class App extends Component {
         <Route
           exact
           path='/'
-          render={(routeProps) => <PaletteList palettes={this.state.palettes} {...routeProps} />} />
+          render={(routeProps) => <PaletteList palettes={this.state.palettes} deletePalette={this.deletePalette} {...routeProps} />} />
         <Route
           exact
           path='/palette/:id'
