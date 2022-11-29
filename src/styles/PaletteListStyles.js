@@ -42,8 +42,9 @@ export default {
     alignItems: 'center',
     color: 'white',
     '& a': {
-      color: '#9517b6',
-      fontWeight:'700'
+      color: '#FFF',
+      fontWeight:'700',
+      fontSize:'1.3rem'
     }
   },
   palettes: {
@@ -62,6 +63,6 @@ export default {
   },
   heading: {
     fontSize: '2rem',
-    color: '#9517b6'
+    color: '#FFF'
   }
 }
