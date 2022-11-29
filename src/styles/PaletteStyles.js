@@ -1,6 +1,15 @@
 import sizes from './sizes';
 
 export default {
+    "@global": {
+        ".fade-exit": {
+            opacity: 1,
+        },
+        ".fade-exit-active": {
+            opacity: 0,
+            transition: "opacity 500ms ease-out",
+        },
+    },
     Palette: {
         height: "100vh",
         overflowX: 'hidden'
@@ -37,17 +46,17 @@ export default {
             border: "none",
             textDecoration: "none",
         },
-        [sizes.down("lg")]:{
-            width:'75%',
-            height:'33.33%'
+        [sizes.down("lg")]: {
+            width: '75%',
+            height: '33.33%'
         },
-        [sizes.down("md")]:{
-            width:'50%',
-            height:'20%'
+        [sizes.down("md")]: {
+            width: '50%',
+            height: '20%'
         },
-        [sizes.down("xs")]:{
-            width:'100%',
-            height:'10%'
+        [sizes.down("xs")]: {
+            width: '100%',
+            height: '10%'
         }
     }
 }

@@ -3,7 +3,8 @@ import Button from '@material-ui/core/Button';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import { ChromePicker } from 'react-color';
 import { withStyles } from '@material-ui/core/styles';
-import styles from './styles/ColorPickerFormStyles'
+import styles from './styles/ColorPickerFormStyles';
+import chroma from "chroma-js";
 
 class ColorPickerForm extends Component {
     constructor(props) {
@@ -28,7 +29,9 @@ class ColorPickerForm extends Component {
 
     }
     updateCurrentColor(newColor) {
-        this.setState({ currentColor: newColor.hex })
+        const { r, g, b, a } = newColor.rgb;
+        const rgbaColor = `rgba(${r},${g},${b},${a})`;
+        this.setState({ currentColor: rgbaColor });
     }
     handleChange(evt) {
         this.setState({ [evt.target.name]: evt.target.value });
@@ -38,6 +41,7 @@ class ColorPickerForm extends Component {
             color: this.state.currentColor,
             name: this.state.newColorName
         };
+        console.log(newColor)
         this.props.addNewColor(newColor);
         this.setState({ newColorName: '' });
     }

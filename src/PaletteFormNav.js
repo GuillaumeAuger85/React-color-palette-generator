@@ -38,7 +38,7 @@ class PaletteFormNav extends Component {
         const { newPaletteName } = this.state;
         return (
             <div classeName='classes.root'>
-                <CssBaseline />
+                {/* <CssBaseline /> */}
                 <AppBar
                     position="fixed"
                     color='default'

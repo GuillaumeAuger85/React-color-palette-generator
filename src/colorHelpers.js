@@ -18,8 +18,8 @@ function generatePalette(starterPalette) {
                 name: `${color.name} ${levels[i]}`,
                 id: color.name.toLowerCase(/ /g, '-'),
                 hex: scale[i],
-                rgb: chroma(scale[i]).css(),
-                rgba:chroma(scale[i]).css().replace('rgb','rgba').replace(')',',1.0)')
+                rgb:chroma(scale[i]).css(),
+                rgba: chroma(scale[i]).css().length < 17 ? chroma(scale[i]).css().replace('rgb','rgba').replace(')',',1.0)') : chroma(scale[i]).css()
             })
         }
     }
