@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -34,11 +33,10 @@ class PaletteFormNav extends Component {
         this.setState({formShowing: false})
     }
     render() {
-        const { classes, open, palettes, handleSubmit } = this.props;
-        const { newPaletteName } = this.state;
+        const { classes, open, palettes, handleSubmit,handleDrawerOpen } = this.props;
+        const {formShowing } = this.state;
         return (
             <div classeName='classes.root'>
-                {/* <CssBaseline /> */}
                 <AppBar
                     position="fixed"
                     color='default'
@@ -50,7 +48,7 @@ class PaletteFormNav extends Component {
                         <IconButton
                             color="inherit"
                             aria-label="Open drawer"
-                            onClick={this.props.handleDrawerOpen}
+                            onClick={handleDrawerOpen}
                             className={classNames(classes.menuButton, open && classes.hide)}
                         >
                             <AddToPhotosIcon/>
@@ -82,7 +80,7 @@ class PaletteFormNav extends Component {
                         </Button>
                     </div>
                 </AppBar>
-                {this.state.formShowing &&
+                {formShowing &&
                     <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm}/>
                 }
             </div>

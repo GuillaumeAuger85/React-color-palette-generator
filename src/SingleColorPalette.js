@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { withStyles } from '@material-ui/styles';
 import ColorBox from './ColorBox';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom'
 import PaletteFooter from './PaletteFooter';
-import { withStyles } from '@material-ui/styles';
 import styles from './styles/PaletteStyles';
 
 
@@ -37,7 +37,7 @@ class SingleColorPalette extends Component {
         ))
         return (
             <div className={classes.Palette}>
-                <Navbar format={this.state.format} handleChange={this.changeFormat} showingAllColors={false} />
+                <Navbar format={format} handleChange={this.changeFormat} showingAllColors={false} />
                 <div className={classes.PaletteColors}>
                     {colorBoxes}
                     <div className={classes.goBack}>
