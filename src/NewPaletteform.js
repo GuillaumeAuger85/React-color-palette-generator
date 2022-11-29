@@ -22,7 +22,7 @@ class NewPaletteForm extends Component {
         super(props)
         this.state = {
             open: false,
-            colors: this.props.palettes[0].colors,
+            colors: seedColors[0].colors,
             randomColors: seedColors.map(palette => (
                 palette.colors
             )).flat(),
