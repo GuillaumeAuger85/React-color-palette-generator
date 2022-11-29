@@ -1,0 +1,371 @@
+[33mcommit 9e2e6fcc03fb22060c9708c637ee4030c66a17f0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 29 13:16:42 2022 -0500
+
+    refactor with PureComponent
+
+[33mcommit dfd81e36cd5ce2573399010e3c10d41f75cfd998[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 29 10:33:13 2022 -0500
+
+    Clean up route animation
+
+[33mcommit 280719c177f906efa0f13cc5536fb2c17a6c6527[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 23 16:39:01 2022 -0500
+
+    add basic route transitions
+
+[33mcommit 7e034a286f1a67b8cd26a226109f18ebd6eaea7f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 23 16:05:53 2022 -0500
+
+    fix dragging bug
+
+[33mcommit 53237163f579ba9ae64d91c4293ce1e1fad971f1[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 23 16:00:47 2022 -0500
+
+    add delete confirmation dialog
+
+[33mcommit badcfb113863a5628acd8c0b2e3898af437d778b[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 23 12:59:45 2022 -0500
+
+    Add bg to PaletteList
+
+[33mcommit 750eac452ff271eec0ee54f57e6ad1d5482aae53[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 23 12:28:12 2022 -0500
+
+    Make Palette list responsive
+
+[33mcommit 585bb415dd43f069ef681f8dcbd0a2af7ef7598f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 17:32:32 2022 -0500
+
+    Make form and navbar responsive
+
+[33mcommit 7d58e3a5c67c492b64ddfd13f63136774dc3352f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 17:06:06 2022 -0500
+
+    make colorBox responsive
+
+[33mcommit ec8307fb877ebdcae7c715ac495fa90e5474679e[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 16:27:33 2022 -0500
+
+    Add responsive helper and style ColorBox
+
+[33mcommit 9981564b96b3e127c6287ff7109fc6a35b081f78[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 15:00:13 2022 -0500
+
+    Finish miniPaletteDelete
+
+[33mcommit bbddce91877937326cba9d0e55e4d1882aa501d9[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 14:17:19 2022 -0500
+
+    Add deleteIcon to MiniPalette
+
+[33mcommit c883041cfcecaa79827511238e20707c0ae9e7b7[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 13:52:26 2022 -0500
+
+    Save Palettes to LocalStorage
+
+[33mcommit 81dff5e632f75a18d226f62059325cc96b402766[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 11:15:32 2022 -0500
+
+    Tweak styles of form
+
+[33mcommit 421517863ee645532e1b3fd2e61e1508bac0da9f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 22 10:43:21 2022 -0500
+
+    Move styles out and add constants files
+
+[33mcommit 03f77686272ac9b397eeed4393408a974cbe4928[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 17:51:36 2022 -0500
+
+    Finish emoji Picker and form
+
+[33mcommit f91aa8e594774aa4b20f07be0ce45f22cc7ac46f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 16:56:47 2022 -0500
+
+    fix form dialog and install emoji-picker
+
+[33mcommit 5cac0e85b385c224bdd76f717ae0427ec59bf214[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 16:03:40 2022 -0500
+
+    Add PaletteMetaForm and add dialog
+
+[33mcommit 97a7125f65186284f1e86498042ffed97402ab65[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 15:20:06 2022 -0500
+
+    style colorPickerForm
+
+[33mcommit 442ff08b93e7c36322902b7a9e46c4ec7b61a575[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 14:50:28 2022 -0500
+
+    Start to style Palettenav
+
+[33mcommit 1bdf447626d94ed3f5242086c2db3ee1e20bf117[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 14:36:01 2022 -0500
+
+    refactor to the colorPicker component
+
+[33mcommit 44e53729f11670d6a297d8b1ece19fad7b778251[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 13:49:07 2022 -0500
+
+    refactor nav to own component : newPaletteNav
+
+[33mcommit 7ca40ec0173f722bb676e510026c5bb7587aa03f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 21 12:22:30 2022 -0500
+
+    add reandomColor and clear palette
+
+[33mcommit 9637d1575f35bc3bf1a3a96d968566cd4378ebbd[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 18 15:15:07 2022 -0500
+
+    implement drag and drop
+
+[33mcommit c0c0cb8631593f89c5345a822348e36c8cdb24cc[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 18 12:19:25 2022 -0500
+
+    Add delete to paletteform
+
+[33mcommit 19d7d0ebd059e44f0c3f18287337e34c4b366493[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 18 11:39:18 2022 -0500
+
+    style draggable box
+
+[33mcommit 2ed0a1b109c1b05adc38aab8be227881274ba4a6[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 18 11:10:07 2022 -0500
+
+    Add Palette name form
+
+[33mcommit 8a890658f05b05fb4f0c9599a84a5eadb90a02ba[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 17 16:54:20 2022 -0500
+
+    Add save Palette
+
+[33mcommit cc2a48b1f1df89640166fa117d64ece0a2da5980[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 17 15:46:20 2022 -0500
+
+    add form validator
+
+[33mcommit b5ba69168d2f1261be957049cfd9f732a6c64edb[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 17 12:05:31 2022 -0500
+
+    Add draggableColorBox
+
+[33mcommit c980c5c4a09842540b63cf5eaa48a86d36a8ea6c[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 17 11:37:04 2022 -0500
+
+    connect colorPicker to button
+
+[33mcommit acef71ee3200937a84acc6a527d21b7316240f49[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 17 11:01:04 2022 -0500
+
+    add Chrome Color Picker and Buttons to drawer
+
+[33mcommit eed0e18cbee55be2e084b0ca5a2ec7ba8d120b05[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 17 10:37:41 2022 -0500
+
+    add drawer to NewPaletteForm
+
+[33mcommit ccd711ac2b3d99092486f49d420476ee2586085f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 17:37:51 2022 -0500
+
+    Add new Palette Form and link
+
+[33mcommit f5b5fc70bcef590c9e55b10ff8f03bc75d9b540d[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 17:21:41 2022 -0500
+
+    refactor navbar styles and remove css
+
+[33mcommit 5dd8ca0a997edef96cd7ee7cb1278e6f4633dab2[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 16:38:47 2022 -0500
+
+    move out styles
+
+[33mcommit 4583babea3048e2ba71395a7b2a3b64f1738edfe[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 16:11:03 2022 -0500
+
+    refactor palette styles
+
+[33mcommit 7673e7f1a9f4b982388e296e1ae17e4bf77697ec[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 15:48:13 2022 -0500
+
+    finish refactor of colorBox css
+
+[33mcommit 9c04e48609de4a200db57eabb1056dd0cb1b91df[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 15:21:22 2022 -0500
+
+    refactor colorbox styles
+
+[33mcommit ad498dbf9ead7adb629a3ebea20d14ed23961e61[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 12:58:49 2022 -0500
+
+    adjust text color based on luminance
+
+[33mcommit 4807712737759a0bbd9533366bd535ff3292d81d[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 12:13:54 2022 -0500
+
+    add go back link
+
+[33mcommit 3d864ab0878645b41d55c9f4f448393c7a273492[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Wed Nov 16 11:46:43 2022 -0500
+
+    Add navbar and footer to singleColorpalette
+
+[33mcommit cbbb7ad4d017b081ec16be13c58f572aa7bb07bc[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 15 16:59:17 2022 -0500
+
+    display colors and singleColorPalette
+
+[33mcommit d567fb24ac104a45ba6532d139736dd2a1a95ad0[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Tue Nov 15 11:58:14 2022 -0500
+
+    add link to palette
+
+[33mcommit 68ecd7790850f5d7000736b74dafb226e612531a[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 14 18:24:47 2022 -0500
+
+    finish styling miniPalette
+
+[33mcommit dc0e32b5f480feeb55f4fd12f956af086576362e[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 14 17:50:28 2022 -0500
+
+    start styling palettesList withStyles
+
+[33mcommit 2c077d9ca283ddcebc3aa18b9468eef4e9c9036b[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Mon Nov 14 17:04:33 2022 -0500
+
+    start styling mini palette
+
+[33mcommit a7b9297d34a49048d4ddc9fcd047ea5c65c8427b[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 11 15:49:58 2022 -0500
+
+    add paletteList and links
+
+[33mcommit f8ceea15e6df2ff0f7b6882053f1701bd4099d27[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 11 15:22:11 2022 -0500
+
+    fix palette route
+
+[33mcommit 1c6c4389d65fd350601f9bb7bf62ef7361d58ff3[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 11 14:42:51 2022 -0500
+
+    add react router
+
+[33mcommit f4ac61caeb02a39ed9290eab823844b160496295[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 11 14:03:27 2022 -0500
+
+    add snackbar and style select
+
+[33mcommit 8b7e460aa1a18cfb2479b76fedccc84213d23ab2[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Fri Nov 11 12:11:20 2022 -0500
+
+    add select and material UI
+
+[33mcommit a02d2c5f72a70afd35322606b66f645b1695050f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 17:11:24 2022 -0500
+
+    add Navbar and font
+
+[33mcommit 5d990f2bfcbcea4b2924a8d8cefda2d296baf43c[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 16:47:27 2022 -0500
+
+    style slider
+
+[33mcommit 4cdf194aea2bae6898c1602edd1dd6b54ff50476[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 16:27:15 2022 -0500
+
+    add unstyled color slider
+
+[33mcommit 14872f14b92ca2e3f88dadeaeacc28c05187368f[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 15:43:16 2022 -0500
+
+    add colorHelpers to generate colors
+
+[33mcommit b803bdc29a165cbb8ac3737d534b30daf256f1d6[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 14:34:44 2022 -0500
+
+    add copy overlay animation
+
+[33mcommit 318ffe8eb4015a8a0fef7c922af8d5ca06410807[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 13:30:32 2022 -0500
+
+    add copy to clipboard
+
+[33mcommit e3daf78804bea5c07b4decc9f0e66729a3eebcfb[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 13:20:56 2022 -0500
+
+    style colorbBox
+
+[33mcommit da2f68381fbee3135fd37f68eb63f007996d37a8[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 12:15:26 2022 -0500
+
+    add colorBox
+
+[33mcommit 37f22e68d8eaf4c9b9a62b53277bc836b007df90[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 11:36:59 2022 -0500
+
+    created react app, added palette
+
+[33mcommit 64fc21ddc506e895c0b6aeb40c24ac5a18d779b5[m
+Author: GuillaumeAuger85 <auger.guillaume@gmail.com>
+Date:   Thu Nov 10 11:19:11 2022 -0500
+
+    Initialize project using Create React App
