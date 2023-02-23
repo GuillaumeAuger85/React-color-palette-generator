@@ -66,7 +66,7 @@ class App extends Component {
                     />
                   </Page>
                 }
-              />
+              />flexwrap
               <Route
                 exact
                 path='/'

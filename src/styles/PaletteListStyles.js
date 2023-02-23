@@ -28,7 +28,6 @@ export default {
     [sizes.down('xl')]: {
       width: '80%'
     },
-    flexWrap: 'wrap',
     [sizes.down('xs')]: {
       width: '75%'
     }

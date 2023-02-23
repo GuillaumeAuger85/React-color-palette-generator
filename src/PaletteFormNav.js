@@ -29,12 +29,12 @@ class PaletteFormNav extends Component {
     showForm() {
         this.setState({ formShowing: true })
     }
-    hideForm(){
-        this.setState({formShowing: false})
+    hideForm() {
+        this.setState({ formShowing: false })
     }
     render() {
-        const { classes, open, palettes, handleSubmit,handleDrawerOpen } = this.props;
-        const {formShowing } = this.state;
+        const { classes, open, palettes, handleSubmit, handleDrawerOpen } = this.props;
+        const { formShowing } = this.state;
         return (
             <div classeName='classes.root'>
                 <AppBar
@@ -51,15 +51,21 @@ class PaletteFormNav extends Component {
                             onClick={handleDrawerOpen}
                             className={classNames(classes.menuButton, open && classes.hide)}
                         >
-                            <AddToPhotosIcon/>
+                            <AddToPhotosIcon />
                         </IconButton>
                         <Typography
                             variant="h6"
                             color="inherit"
                             noWrap>
-                            Create A Palette
+                            Create A Palette  
                         </Typography>
                     </Toolbar>
+                    <Typography
+                            variant="h6"
+                            color="inherit"
+                            noWrap>
+                            Drag & drop to reorder color boxes 
+                        </Typography>
                     <div className={classes.navBtns}>
                         <Link to='/'>
                             <Button
@@ -81,7 +87,7 @@ class PaletteFormNav extends Component {
                     </div>
                 </AppBar>
                 {formShowing &&
-                    <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm}/>
+                    <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm} />
                 }
             </div>
         )

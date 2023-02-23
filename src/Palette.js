@@ -24,12 +24,8 @@ class Palette extends Component {
     }
     render() {
         const { colors, paletteName, emoji, id } = this.props.palette;
-        const {classes} =this.props;
+        const { classes } = this.props;
         const { level, format } = this.state;
-        function containsAnyLetters(str) {
-            return /[a-zA-Z]/.test(str);
-        }
-        const span = containsAnyLetters(emoji) ? <span className={`emoji fi fi-${emoji.toLowerCase()}`}></span> : <span className='emoji'>{emoji}</span>;
         const colorBoxes = colors[level].map(color => (
             <ColorBox background={color[format]} name={color.name} key={color.id} colorId={color.id} paletteId={id} showingFullPalette={true} />
         ))
