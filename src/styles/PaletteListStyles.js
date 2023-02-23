@@ -1,5 +1,4 @@
 import sizes from './sizes';
-import bg from './bg.svg'
 
 export default {
   '@global':{
@@ -12,14 +11,13 @@ export default {
         }
   },
   root: {
-    backgroundColor: 'blue',
     height: '100vh',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
-    /* background by SVGBackgrounds.com */
-    backgroundImage: `url(${bg})`,
-    overflow: 'scroll'
+    /* background by pixabay.com */
+    backgroundImage: `url(https://pixabay.com/get/g64a0e21b6cab98170765d94607f78c6fcbf076ce4fed9c3fc52814d54ca79846747601b9fcff548663ded57a6713e6b48e1c4766df6e65a7038ee5abe31732205dee867eb77267332d62cf49c3f313c1_1920.jpg)`,
+    overflowY: 'scroll'
   },
   container: {
     width: '50%',
