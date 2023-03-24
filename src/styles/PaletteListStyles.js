@@ -1,5 +1,5 @@
 import sizes from './sizes';
-import bg from './img/cool-background.png'
+import bg from './img/bg.svg'
 
 export default {
   '@global':{
@@ -64,3 +64,8 @@ export default {
     color: '#FFF'
   }
 }
+
+
+
+
+
