@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/React-color-palette-generator/static/css/main.618da953.css",
-    "main.js": "/React-color-palette-generator/static/js/main.3bfdab75.js",
+    "main.js": "/React-color-palette-generator/static/js/main.5ae76c6c.js",
     "static/js/787.0fb6e0a2.chunk.js": "/React-color-palette-generator/static/js/787.0fb6e0a2.chunk.js",
+    "static/media/bg.png": "/React-color-palette-generator/static/media/bg.ecd8bdd0aedbec852076.png",
     "static/media/do.svg": "/React-color-palette-generator/static/media/do.d2287a1e1eee0805fc27.svg",
-    "static/media/bg.png": "/React-color-palette-generator/static/media/bg.01bbf4c105d941e779a9.png",
     "static/media/rs.svg": "/React-color-palette-generator/static/media/rs.dc155455e86e12200cb5.svg",
     "static/media/bo.svg": "/React-color-palette-generator/static/media/bo.e0a90fef5f7c6c6ab66f.svg",
     "static/media/mx.svg": "/React-color-palette-generator/static/media/mx.e18539f71c1156849ae2.svg",
@@ -271,11 +271,11 @@
     "static/media/bd.svg": "/React-color-palette-generator/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/React-color-palette-generator/static/media/id.f624e2c8444a7794b357.svg",
     "main.618da953.css.map": "/React-color-palette-generator/static/css/main.618da953.css.map",
-    "main.3bfdab75.js.map": "/React-color-palette-generator/static/js/main.3bfdab75.js.map",
+    "main.5ae76c6c.js.map": "/React-color-palette-generator/static/js/main.5ae76c6c.js.map",
     "787.0fb6e0a2.chunk.js.map": "/React-color-palette-generator/static/js/787.0fb6e0a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.618da953.css",
-    "static/js/main.3bfdab75.js"
+    "static/js/main.5ae76c6c.js"
   ]
 }
