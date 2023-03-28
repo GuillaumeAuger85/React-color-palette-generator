@@ -1,5 +1,5 @@
 import sizes from './sizes';
-import bg from './img/bg.svg'
+import bg2 from './img/bg2.png'
 
 export default {
   '@global':{
@@ -17,7 +17,7 @@ export default {
     alignItems: 'flex-start',
     justifyContent: 'center',
     /* background by https://coolbackgrounds.io/*/
-    backgroundImage: `url(${bg})`,
+    backgroundImage: `url(${bg2})`,
     overflowY: 'scroll'
   },
   container: {
