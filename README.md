@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# React-color-palette-generator
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+**REACT APP**<br>
+**Choose from existing color palettes or generate your own and save them**
+
+## Try it [here](https://GuillaumeAuger85.github.io/React-color-palette-generator)!
+
+**Screenshot:**
+
+![ColorPalette](https://user-images.githubusercontent.com/49698792/221023542-8360005c-55ea-4928-bca4-82c64d8d0cac.PNG)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
